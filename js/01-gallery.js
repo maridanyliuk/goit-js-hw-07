@@ -29,7 +29,7 @@ document.addEventListener("click", (e) => {
         return;
     }
     const selectedImg = basicLightbox.create(
-        `<img src = "${selectedImg}" width="800" height="600"`,
+        `<img src = "${event.target.dataset.source}" width="800" height="600"`,
         {
             onShow: () => {
                 document.addEventListener("keydown", closeModal);
